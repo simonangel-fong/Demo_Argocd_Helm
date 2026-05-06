@@ -9,3 +9,5 @@ argocd app list
 argocd app sync argocd/guestbook-valuefile
 
 ```
+
+![pic](./images/guestbook-app-value-file.png)

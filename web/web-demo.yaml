@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: web-demo
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://simonangel-fong.github.io/Demo_Helm_Public_Repo/
+    chart: web-demo     
+    targetRevision: 0.2.4
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: default
